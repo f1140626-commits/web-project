@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Fix Encoding",
+			"type": "shell",
+			"command": "node writeFiles.js",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Db Push",
+			"type": "shell",
+			"command": "npx prisma db push --accept-data-loss",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
